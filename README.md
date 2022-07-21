@@ -10,7 +10,7 @@
 
 精细测量原子分子与离子的电子能级与电离能是一项重要且具有难度的任务。一种常见的做法是，使用激光激发位于某一能级的体系，使之释放电子。已知激光光子的能量为 $E = h\nu$，通过精确测量电子的动能 $E_k$ 来得知体系的束缚能（Binding Energy）$E_B = E - E_k$，这样的方法成为光电子能谱法（PES，Photonelectron/Photoemission Spectroscopy）。PES 在实验凝聚态与原子分子物理中有着广泛的应用。
 
-![apparatus](Figures/apparatus.png)
+![apparatus](figures/apparatus.png)
 
 *图1. 完整的仪器。我们关注从激光脱附（电离）到成像阶段*
 
@@ -20,14 +20,14 @@
 
 如何将动量空间转化为可测量的实空间？可以让电子从团簇中自由扩散。以电子电离为时间 0 点，假设电子之间没有相互作用，则在 $t$ 时刻，电子位置为 $\vec{r}=\vec{v}t$，电子将扩散成半径 $r=vt$ 的球面，且电子相对与球心的角分布正是电子动量的角分布。因此，如同烟花，通过让电子匀速扩散，即可将速度场 $\vec{v}$ 转化为电子的空间位置场 $\vec{r}$。
 
-![cmframe](Figures/CMFrame.gif)
+![cmframe](figures/CMFrame.gif)
 
 *图2. $\vec{r}=\vec{v}t$，蓝色点为被电离的光电子*
 
 为了测量 $\vec{r}$，实验学家制作了一段真空漂移管，通过电场能够让电离出来的电子在 $y$
 方向整体获得一个速度，进而让电子团以一定速度漂移来固定时间 $t$，如图2。
 
-![mvframe](Figures/MVFrame.gif)
+![mvframe](figures/MVFrame.gif)
 
 *图3. 实验室坐标系，红色平面为单电子探测器*
 
@@ -35,25 +35,25 @@
 
 ### MCP
 
-![schema of mcp](Figures/schematicStructureofMCP.png)
+![schema of mcp](figures/schematicStructureofMCP.png)
 
 *图4:微通道板结构*
 
 微通道板（MCP）是很多中空的通道排列在二维平面上组成的薄片结构，如图 4a 所示。MCP 的表面和通道璧镀上了容易激发出二次电子的材料（如Al2O3），电子（动能为$E_k$）入射到通道内部后会激发出 N 个二次电子，N 受入射电子能量和镀膜厚度影响。实验结果显示膜厚越大，N 越大；随入射电子动能增加，N 先增加后减少。激发的二次电子在通道内部的电场作用下加速，再次轰击管壁，产生更多的二次电子，最终在出口输出倍增的大量电子，如图 4b 所示。MCP 两端电压越高，厚度越大，增益（电子倍增因子）越大。
 
-![kinetic of secondary electron](Figures/kinetic.png)
+![kinetic of secondary electron](figures/kinetic.png)
 
 *图4:二次电子的动能*
 
 二次电子的动能主要分布在 0 和 $E_k$ 附近，如图 5 所示。$E_k$ 附近的二次电子主要是入射电子弹性散射产生，0 附近的二次电子主要为电离产生。有一些模型描述了二次电子的发射过程，但是包含有很多需要实验测量的参数 [4]。
 
-![number of MCP](Figures/MCPnumber.jpg)
+![number of MCP](figures/MCPnumber.jpg)
 
 *图5:MCP 的增益[3]*
 
 通常单片 MCP 的增益控制在 $10^3-10^4$，如果获得更高的增益，需要将多片 MCP 串联起来，如图 5。但是当串联更多或者单片 MCP 增益过高的时候，最后一片 MCP 每个通道进入的电子数过多，导致无法达到正常预期的增益，这种现象说明 MCP 已经饱和。本作业假定 MCP 均工作在线性状态。
 
-![screen](Figures/MCPscreen.jpg)
+![screen](figures/MCPscreen.jpg)
 
 *图6:单层 MCP 和两层 MCP 与荧光屏[3]*
 
@@ -110,7 +110,7 @@
 
 最终要求采样出两层MCP的倍增结果:电子动能分布图和电子位置分布图。
 
-#### ET-3 CCD上的图像 12'
+#### ET-3 CCD上的图像 22'
 
 从第二层 MCP 出射后，距离荧光屏 $d_2=10^{-3}$，匀速飞行后撞击荧光屏并发光。
 
